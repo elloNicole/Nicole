@@ -1,0 +1,30 @@
+var a, b, c;
+
+a=prompt("Informe o 1º numero: ");
+a=parsefloat(a);
+
+b=prompt("Informe o 2º numero: ");
+b=parsefloat(b);
+
+c=prompt("Informe o 3º numero: ");
+c=parsefloat(c);
+
+if(a>b && a>c){
+    var maior=a;
+}else if(b>a && b>c){
+    var maior=b;
+} else{
+    var maior=c;
+}
+
+if(a<b && a<c){
+    var menor=a;
+}else if(b<a && b<c){
+    var menor=b;
+} else{
+    var menor=c;
+}
+
+var meio=a+b+c-menor-maior;
+
+alert("O maior numero é "+maior", o menor "+menor"e o do meio"+meio);
